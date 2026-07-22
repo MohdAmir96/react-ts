@@ -3,7 +3,7 @@ import { useDebounce } from "../customHooks/useDebounce";
 const SearchInput = () => {
   const [query, setQuery] = useState("");
   const debouncedQuery = useDebounce(query, 500);
-  console.log(debouncedQuery);
+
   useEffect(() => {
     if (debouncedQuery) {
       // Call API or perform side effect here
